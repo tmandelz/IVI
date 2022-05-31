@@ -52,6 +52,7 @@ fig = px.choropleth(Kosovodf, geojson=Kosovodf.geometry,
                     )
 fig.update_geos(fitbounds="locations", visible=False)
 
+fig.write_html("KosovoMap.html")
 #%%
 server = flask.Flask(__name__)
 
